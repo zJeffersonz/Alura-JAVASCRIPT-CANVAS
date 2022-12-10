@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h4>MEU PRIMEIRO ARQUIVO</h4>
+    <a href="https://www.alura.com.br/"> ALURA <br></a>
+    
+</body>
+    <script>
+        function pularLinha(){
+            document.write("<br>");
+        }
+        function mostrar(frase){
+            document.write(frase);
+            pularLinha();
+        }
+        var vitorias = parseInt(prompt("Quantas vitorias: "));
+        var empates = parseInt(prompt("Quantas empates: "));
+        var pontos = vitorias*3+empates;
+
+        mostrar("Os pontos do seu time é: "+ pontos);
+        if (pontos > 28){
+            mostrar("Seu time esta melhor do que ano passado!");
+        }
+        if(pontos < 28){
+            mostrar("Seu time esta pior do que ano passado!");
+        }
+        if( pontos == 28){
+            mostrar("Seu time esta igual do que ano passado!");
+        }
+
+
+
+
+    </script>
+</html>
+
